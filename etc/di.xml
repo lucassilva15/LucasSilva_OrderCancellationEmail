@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PHP version 7
+ *
+ * @author      Lucas Silva DEV <lucas.silva15@universo.univates.br>
+ * @copyright   2023 Lucas Silva (http://www.lucassilva.dev.br)
+ * @license     http://www.lucassilva.dev.br  Copyright
+ * @link        http://www.lucassilva.dev.br
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Data\Email\OrderCancelEmailOptionsInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Data\Email\OrderCancelEmailOptions"/>
+
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Data\Email\Data\OrderCancelEmailVariablesInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Data\Email\Data\OrderCancelEmailVariables"/>
+
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Email\GetOrderCancelTemplateVariablesInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Email\Template\Variables\GetOrderCancelTemplateVariables"/>
+
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Email\GetOrderCancelTemplateOptionsInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Email\Template\GetOrderCancelTemplateOptions"/>
+
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Config\OrderCancelConfigProviderInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Config\OrderCancelConfigProvider"/>
+
+    <preference for="LucasSilva\OrderCancellationEmail\Api\Email\GetOrderCancelTransportInterface"
+                type="LucasSilva\OrderCancellationEmail\Model\Email\GetOrderCancelTransport"/>
+</config>

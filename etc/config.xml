@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PHP version 7
+ *
+ * @author      Lucas Silva DEV <lucas.silva15@universo.univates.br>
+ * @copyright   2023 Lucas Silva (http://www.lucassilva.dev.br)
+ * @license     http://www.lucassilva.dev.br  Copyright
+ * @link        http://www.lucassilva.dev.br
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sales_email>
+            <cancel_order>
+                <enabled>1</enabled>
+                <template>sales_email_cancel_order_template</template>
+                <guest_template>sales_email_cancel_order_guest_template</guest_template>
+                <identity>sales</identity>
+            </cancel_order>
+        </sales_email>
+    </default>
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PHP version 7
+ *
+ * @author      Lucas Silva DEV <lucas.silva15@universo.univates.br>
+ * @copyright   2023 Lucas Silva (http://www.lucassilva.dev.br)
+ * @license     http://www.lucassilva.dev.br  Copyright
+ * @link        http://www.lucassilva.dev.br
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="LucasSilva_OrderCancellationEmail">
+        <sequence>
+            <module name="Magento_Backend"/>
+            <module name="Magento_Sales"/>
+        </sequence>
+    </module>
+</config>
