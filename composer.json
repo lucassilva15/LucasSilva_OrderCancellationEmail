@@ -7,9 +7,7 @@
         "magento/framework": "*",
         "magento/module-sales": "103.0.*"
     },
-    "license": [
-        "Massachusetts Institute of Technology License (MITL)"
-    ],
+    "license": "proprietary",
     "autoload": {
         "files": [
             "registration.php"
